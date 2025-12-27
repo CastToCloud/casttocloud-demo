@@ -26,6 +26,8 @@ void ADemoGamePlayerController::BeginPlay()
 {
 	// Call the base class  
 	Super::BeginPlay();
+
+	ConsoleCommand(TEXT("CastToCloud.Analytics.PrintDebugFlags true"), true);
 }
 
 void ADemoGamePlayerController::SetupInputComponent()
